@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+
+    <form action="" method="post">
+      <!-- Name -->
+      <label for="firstname">First Name:</label>
+      <input
+        name="first"
+        id="firstname"
+        type="text"
+        placeholder="John"
+        required
+      />
+
+      <label for="lastname">Last Name:</label>
+      <input name="Last" id="lastname" type="text" placeholder="Doe" required />
+      <div>
+        <!-- Gender -->
+        <label for="Gender">Male</label>
+        <input id="Gender" name="Gender" type="radio" value="male" />
+
+        <label for="Gender">Female</label>
+        <input id="Gender" name="Gender" type="radio" value="female" />
+      </div>
+
+      <div>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="johndoe@gmail.com"
+          required
+        />
+
+        <!-- Password -->
+        <label for="Password"> Password:</label>
+        <input
+          name="password"
+          id="Password"
+          type="password"
+          placeholder="Password"
+          pattern=".{5,10}"
+          required
+          title="5 to 10 characters"
+        />
+      </div>
+
+      <div>
+        <!-- Date Of Birth -->
+        <label for="Birthday">Birthday:</label>
+
+        <select name="month" id="Birthday">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+        </select>
+
+        <select name="Day" id="Birthday">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+        </select>
+
+        <select name="year" id="Birthday">
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="terms">I agree to the terms and conditions</label>
+        <input id="terms" type="checkbox" />
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
